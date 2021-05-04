@@ -19,3 +19,6 @@ poreiki;
 issiunte uzklause... 
 6) oop- object oriented programming(objektinis programavimas)
 */
+
+console.log('Labas ka tu?')
+console.log("man yra", 36,"metai");

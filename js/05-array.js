@@ -62,3 +62,7 @@ console.log(modern2);
 
 const d= dict.reverse();
 console.log(d);
+
+const hi = `good morning!`;
+const hiSize = hi.length;
+console.log(hiSize);

@@ -48,5 +48,5 @@ console.log(vardai);
 
 // function count(lyginiai) = {1-2+3-4+5};
 
-const zodziai = (istiktukai + ' ' + spalvos + ' ' + medziai);
+const zodziai = (istiktukai + `,` + ' ' + spalvos + `,` +  ' ' + medziai);
 console.log(zodziai);

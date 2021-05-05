@@ -41,17 +41,27 @@ console.log(`${pirmas}+${antras}+${trecias}=${suma}`);
 //2
 
 const vardai = (tetis + ' ' + sunus + ' ' + dukra);
+const vardai2 = `${tetis} ${sunus} ${dukra}`; //trumpesnis paprastesnis
 console.log(vardai);
+console.log(vardai2);
 
 //3
+console.log(`---------3------`);
 
-// const apskaita = lyginiai[1]-lyginiai[2]+lyginiai[3]-lyginiai[4]+lyginiai[5];
-// console.log(apskaita);
-
-// function count(lyginiai) = {1-2+3-4+5};
+const apskaita = lyginiai[0]-lyginiai[1]+lyginiai[2]-lyginiai[3]+lyginiai[4];
+console.log(apskaita);
 
 const zodziai = (istiktukai + `,` + ' ' + spalvos + `,` +  ' ' + medziai);
 console.log(zodziai);
+
+console.log(`-------3b--------`);
+
+//sujunk zodzius
+
+
+const sakinys = `${spalvos[4]}, ${spalvos[3]}, ${spalvos[2]}, ${spalvos[1]}, ${spalvos[0]}`
+console.log(spalvos);
+console.log(sakinys);
 
 //sinusai
 

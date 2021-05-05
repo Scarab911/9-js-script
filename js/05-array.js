@@ -58,3 +58,7 @@ console.log(modern1);
 
 const modern2 = [...a2, ...a1]; 
 console.log(modern2);
+
+
+const d= dict.reverse();
+console.log(d);

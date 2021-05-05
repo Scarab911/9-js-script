@@ -36,6 +36,8 @@ console.log(istiktukai, spalvos, medziai);
 var suma = (pirmas+antras+trecias);
 console.log(suma);
 
+console.log(`${pirmas}+${antras}+${trecias}=${suma}`);
+
 //2
 
 const vardai = (tetis + ' ' + sunus + ' ' + dukra);
@@ -50,3 +52,16 @@ console.log(vardai);
 
 const zodziai = (istiktukai + `,` + ' ' + spalvos + `,` +  ' ' + medziai);
 console.log(zodziai);
+
+//sinusai
+
+const angle=30;
+const sin30= Math.sin(angle / 180* Math.PI);
+console.log(sin30);
+
+// kelimas laipsniu ir saknis
+
+console.log(Math.sqrt(81));  //kvadratine saknis
+console.log(Math.pow(2,3)); //kelimas laipsniu
+console.log(2**3);          //kelimas laipsniu
+console.log();              //liekana

@@ -45,6 +45,7 @@ console.log(fullName);
 // \t - tab
 
 const imgSrc = './img/logo/png';
+
 const HTML = '<header >\n\
                 <img  src="'+ imgSrc +'" alt="logo" class="logo">\n\
                 <nav>\
@@ -58,13 +59,13 @@ const HTML = '<header >\n\
 console.log(HTML);
 
 const HTML2 = `<header >
-<img  class="logo" src="${imgSrc}" alt="logo">
-<nav>
-    <a href="">Link\`</a>
-    <a href="">Link</a>
-    <a href="">Link</a>
-    <a href="">Link</a>
-</nav>  
-</header>`;
+    <img  class="logo" src="${imgSrc}" alt="logo">
+        <nav>
+            <a href="">Link\`</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>  
+        </header>`;
 console.log(HTML2);
 

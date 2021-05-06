@@ -86,3 +86,40 @@ const xIlgis = x.length;
 const yIlgis = y.length;
 console.log(xIlgis);
 console.log(yIlgis);
+
+if (xIlgis > yIlgis){
+    console.log(`Pomidoras`);
+} else {
+    console.log(`Bandykite kita karta`);
+}
+
+if (xIlgis < yIlgis){
+    console.log(`Pomidoras`);
+} else {
+    console.log(`Bandykite kita karta`);
+}
+
+if (xIlgis >= yIlgis){
+    console.log(`Pomidoras`);
+} else {
+    console.log(`Bandykite kita karta`);
+}
+
+if (xIlgis <= yIlgis){
+    console.log(`Pomidoras`);
+} else {
+    console.log(`Bandykite kita karta`);
+}
+
+if (xIlgis === yIlgis){
+    console.log(`Pomidoras`);
+} else {
+    console.log(`Bandykite kita karta`);
+}
+
+if (xIlgis !== yIlgis){
+    console.log(`Pomidoras`);
+} else {
+    console.log(`Bandykite kita karta`);
+}
+

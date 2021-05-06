@@ -55,3 +55,46 @@ switch(day){
         console.log(`Neatpazinta savaites diena`);
         break;
 }
+
+console.log(`---------PROCESAI----------`);
+
+
+/*
+Arbatos paruosimo procesas:
+0) paimti puodeli
+1)isideti arbatos
+2)isideti saldikli
+3)uzpildi vandens
+4)ismaisyti
+5)gerti
+*/
+
+const processStep = 4;
+
+switch(processStep) {
+    case 0:
+    console.log(`paimti puodeli`);
+    
+    case 1:
+    console.log(`isideti arbatos`);
+    
+    case 2:
+    console.log(`isideti saldikli`);
+    
+    case 3:
+    console.log(`uzpilti vandens`);
+    
+    case 4:
+    console.log(`ismaisyti`);
+    
+    case 5:
+    console.log(`gerti`);
+    break;
+    
+    default:
+        console.log(`Neatpazintas procesas`);
+        break;
+}
+
+console.log(`-------------`);
+

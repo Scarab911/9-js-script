@@ -38,3 +38,51 @@ const akys = `rudos`;
  }   else {
         console.log(`Neatpazinta akiu spalva`);
     }
+
+console.log(`--------------uzduotys--------------`);
+
+const ax = 5;
+const bx = 8;
+const cx = 3;
+
+if (ax>bx){
+    console.log(`pomidoras`);
+    }
+    else{
+        console.log(`bandykite kita karta`);
+    }
+
+if(ax === cx){
+    console.log(`pomidoras`);
+} else {
+    console.log(`bandykite kita karta`);
+}
+
+if (bx !== cx){
+    console.log(`pomidoras`);
+} else {
+    console.log(`Bandykite kita karta`);
+}
+
+if (ax>=bx){
+    console.log(`pomidoras`);
+    }
+    else{
+        console.log(`bandykite kita karta`);
+    }
+
+if (ax<=bx){
+    console.log(`pomidoras`);
+    }
+    else{
+        console.log(`bandykite kita karta`);
+    }
+
+
+const x = `saltas`;
+const y = 'vakaras';
+
+const xIlgis = x.length;
+const yIlgis = y.length;
+console.log(xIlgis);
+console.log(yIlgis);

@@ -22,15 +22,21 @@ function  bricks(sienuPlociai, aukstis, plytosAukstis, plytosPlotis){
         } 
         console.log(sienuIlgis);
 
-        const sienuPlotas = sienuIlgis * aukstis;
+        const plytuIlgyje = Math.ceil(sienuIlgis/plytosPlotis);
 
-        const plytosPlotas = plytosAukstis * plytosPlotis;
+        const plytosAukstyje = Math.ceil(aukstis/ plytosAukstis);
 
-        const reikiaPlytu = sienuPlotas / plytosPlotas;
+        const reikiaPlytu = plytuIlgyje* plytosAukstyje;
 
     return reikiaPlytu;
 }
 
 console.log(bricks([1, 2], 1, 0.1, 0.2), '->', 150);
 console.log(bricks([1, 1, 1], 1, 0.1, 0.2), '->', 150);
-console.log(bricks([2, 1, 3, 10], 0.5, 0.1, 0.2), '->', 150);
+console.log(bricks([2, 1, 3], 0.5, 0.1, 0.2), '->', 150);
+console.log(bricks([1.05], 1.05, 0.1, 0.2), '->', 66);
+
+// MAtematnes funkcijos
+// Math.floor - apvalinimasi apatine puse kiek yra pilnu sveiku skaiciu;
+// Math.ceil - apvalinimasi virsu, bent kiek virs pvz 8.00001 = 9;
+// Math.round - reguliarus matematinis apvalinis ties 0.5;

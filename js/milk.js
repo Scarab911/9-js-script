@@ -17,30 +17,45 @@ function milk(shakeNumber, oneShakeReq, milkProduced) {
         if(typeof shakeNumber !== 'number'){
             return 'ERROR: pirmas parametras turi buti skaicius!'
         }
-            if (shakeNumber<0){
-                return 'ERROR: pirmas parametras negali buti neigiamas'
+            if (isNaN(shakeNumber)){
+                return `ERROR: pirmas parametras negali buti NaN`
             }
-                if(shakeNumber % 1 !==0) {
-                    return 'Error: pirmas parametras turi buti sveikasis skaicius!'
+                if (!isFinite(shakeNumber)){
+                    return `ERROR: pirmas parametras negali buti begalybe`
                 }
+                    if (shakeNumber < 0){
+                        return 'ERROR: pirmas parametras negali buti neigiamas'
+                    }
+                        if(shakeNumber % 1 !==0) {
+                            return 'Error: pirmas parametras turi buti sveikasis skaicius!'
+                        }
     if(typeof oneShakeReq === 'undefined'){
         return 'ERROR: neduotas antras parametras!'
     }        
         if(typeof oneShakeReq !== 'number'){
             return 'ERROR: antras parametras turi buti skaicius!'
         }
-            if (oneShakeReq<0){
-                return 'ERROR: antras parametras negali buti neigiamas'
+            if (!isFinite(oneShakeReq)){
+                return `ERROR: antras parametras negali buti ${oneShakeReq}` //galima sutrumpinti NaN ir infinyti i viena sakiny!
             }
+                if (oneShakeReq <= 0){
+                    return 'ERROR: antras parametras negali buti neigiamas'
+                }
     if(typeof milkProduced === 'undefined'){
         return 'ERROR: neduotas trecias parametras!'
     }
         if(typeof milkProduced !== 'number'){
             return 'ERROR: trecias parametras turi buti skaicius!'
         }
-            if (milkProduced<=0){
-                return 'ERROR: trecias parametras negali buti neigiamas'
+            if (isNaN(milkProduced)){
+                return `ERROR: trecias parametras negali buti NaN`
             }
+                if (!isFinite(milkProduced)){
+                    return `ERROR: trecias parametras negali buti begalybe`
+                }
+                    if (milkProduced<=0){
+                        return 'ERROR: trecias parametras negali buti neigiamas'
+                    }
     //logic
     const milkReq = (shakeNumber * oneShakeReq);
 
@@ -61,6 +76,13 @@ console.log(milk(2.5, 0.5, 9));
 
 console.log(milk(10, 0.5, 9), `->`, 1);
 console.log(milk(100, 0.5, 9), `->`, 6);
+
+console.log(milk(NaN, 0.5, 9));
+console.log(milk(Infinity, 0.5, 9));
+console.log(milk(10, NaN, 9));
+console.log(milk(10, Infinity, 9));
+console.log(milk(10, 0.5, NaN));
+console.log(milk(10, 0.5, Infinity));
 
 
 

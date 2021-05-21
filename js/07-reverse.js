@@ -5,7 +5,7 @@ Reikia sujungti juos atbulai
 
 //labas , rytas , tau ,sakau
 const d = [`sakau`, `tau`, `rytas`, `labas`];
-let reverse = '';
+// let reverse = '';
 
 // reverse = reverse + d[3];
 // reverse = `,`;
@@ -18,12 +18,12 @@ let reverse = '';
 
 // console.log(reverse);
 
-reverse = `${d[3]}, ${d[2]}, ${d[1]}, ${d[0]} `
-console.log(reverse);
+// reverse = `${d[3]}, ${d[2]}, ${d[1]}, ${d[0]} `
+// console.log(reverse);
 
 //arba
 
-const d2 = [...d];
-const jras = d2.reverse().join(', ');
+// const d2 = [...d];
+const jras = d.reverse().join(', ');
 
 console.log(jras);

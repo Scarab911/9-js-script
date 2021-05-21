@@ -1,6 +1,9 @@
-const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
-    // 
-  };
+function zeroFuel (distanceToPump, mpg, fuelLeft){
+    
+    const iCanRun = mpg * fuelLeft;
+    
+    return iCanRun >= distanceToPump ? true : false;
+}  
 
 
 console.log(zeroFuel(50, 25, 2), `->`, true);
